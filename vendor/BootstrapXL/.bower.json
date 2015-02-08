@@ -1,0 +1,13 @@
+{
+  "name": "BootstrapXL",
+  "homepage": "https://github.com/marcvannieuwenhuijzen/BootstrapXL",
+  "_release": "1949ec0e68",
+  "_resolution": {
+    "type": "branch",
+    "branch": "master",
+    "commit": "1949ec0e685531e574a3ba7dd96fd1b7be5a8930"
+  },
+  "_source": "git://github.com/marcvannieuwenhuijzen/BootstrapXL.git",
+  "_target": "master",
+  "_originalSource": "git://github.com/marcvannieuwenhuijzen/BootstrapXL.git"
+}

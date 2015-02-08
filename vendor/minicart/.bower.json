@@ -1,0 +1,14 @@
+{
+  "name": "minicart",
+  "homepage": "https://github.com/jeffharrell/minicart",
+  "version": "3.0.5",
+  "_release": "3.0.5",
+  "_resolution": {
+    "type": "version",
+    "tag": "v3.0.5",
+    "commit": "341b52c73f4cd3753faa09189f69bf9f339ed628"
+  },
+  "_source": "git://github.com/jeffharrell/minicart.git",
+  "_target": "v3.0.5",
+  "_originalSource": "git://github.com/jeffharrell/minicart.git"
+}
