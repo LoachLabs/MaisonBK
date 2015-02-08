@@ -1,0 +1,87 @@
+{
+  "metadata": {
+    "title": "Maison BK",
+    "description": "Spread Love, it's the BK Way",
+    "author": "Maison BK Inc",
+    "nav": [
+      {
+        "name": "About",
+        "title": "About Us",
+        "url": "#about"
+      },
+      {
+        "name": "Cards",
+        "title": "Spread love through cards.",
+        "url": "#cards"
+      },
+      {
+        "name": "Contact",
+        "title": "Contact us about anything at all!",
+        "url": "#contact"
+      }
+    ],
+    "social": [
+      {
+        "url": "https://www.facebook.com/pages/Maison-BK/1561234794110838",
+        "icon": "facebook",
+        "name": "Facebook"
+      },
+      {
+        "url": "http://instagram.com/maisonbk",
+        "icon": "instagram",
+        "name": "Instagram"
+      }
+    ],
+    "header": [
+      {
+        "img": "img/header1.jpg",
+        "caption": "Send love through cards"
+      },
+      {
+        "img": "img/header2.jpg",
+        "caption": "Sicker than your average"
+      },
+      {
+        "img": "img/header3.jpg",
+        "caption": "Digital downloads and ordered prints"
+      },
+      {
+        "img": "img/header4.jpg",
+        "caption": "It's the BK way"
+      }
+    ]
+  },
+  "plugins": {
+    "metalsmith-metadata": {
+      "cards": "cards.yaml"
+    },
+    "metalsmith-markdown": {},
+    "metalsmith-templates": {
+      "engine": "jade"
+    },
+    "metalsmith-assets": {
+      "source": "./assets",
+      "destination": "./"
+    },
+    "metalsmith-clean-css": {
+      "files": "*main.css",
+      "cleanCSS": {
+        "rebase": true,
+        "root": "assets"
+      }
+    },
+    "metalsmith-concat": {
+      "files": [
+        "vendor/jquery/dist/jquery.min.js",
+        "vendor/components-bootstrap/js/bootstrap.min.js",
+        "vendor/jquery.scrollTo/jquery.scrollTo.min.js",
+        "vendor/matchHeight/jquery.matchHeight-min.js",
+        "vendor/bootbox/bootbox.js",
+        "vendor/minicart/dist/minicart.min.js",
+        "vendor/xor-crypt/xor-crypt.min.js",
+        "main.js"
+      ],
+      "output": "main.js"
+    }
+  }
+}

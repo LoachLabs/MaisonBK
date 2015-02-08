@@ -1,0 +1,15 @@
+{
+  "name": "maisonbk",
+  "version": "0.0.1",
+  "private": true,
+  "dependencies": {
+    "components-bootstrap": "~3.3.2",
+    "components-font-awesome": "~4.2.0",
+    "matchHeight": "~0.5.2",
+    "jquery.scrollTo": "~1.4.14",
+    "bootbox": "~4.3.0",
+    "minicart": "git://github.com/jeffharrell/minicart.git#v3.0.5",
+    "BootstrapXL": "git://github.com/marcvannieuwenhuijzen/BootstrapXL.git#master",
+    "xor-crypt": "~0.0.2"
+  }
+}

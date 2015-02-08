@@ -1,0 +1,43 @@
+extends layout.jade
+
+block contents
+  article.container#cards
+    .row
+      each card, name in cards
+        .card.col-lg-4.col-md-4.col-sm-6.col-xs-12
+          .thumbnail.text-center
+            a.preview(href="#{card.url}" title="#{name}")
+              img.img-responsive(src="img/#{card.img}", alt="#{name}", width="640", height="800")
+            .caption
+              h3 #{name}
+              p #{card.description}
+                form.form-inline.paypal(action='https://www.sandbox.paypal.com/cgi-bin/webscr', method='post')
+                  .input-group
+                    input(type='hidden', name='cmd', value='_cart')
+                    input(type='hidden', name='add', value='1')
+                    input.business(type='hidden', name='business', value='invalidemail@example.com')
+                    input(type='hidden', name='item_name', value='#{name}')
+                    input(type='hidden', name='currency_code', value='CAD')
+                    input(type='hidden', name='return', value='http://maisonbk.ca/thanks.html')
+                    input(type='hidden', name='cancel_return', value='http://maisonbk.ca/thanks.html')
+                    input(type="hidden", name="on0", value="Type")
+                    each variant, i in card.variants
+                      input(type='hidden', name='option_select#{i}', value='#{variant.name}')
+                      input(type='hidden', name='option_amount#{i}', value='#{variant.cost}')
+                    input(type='hidden', name='option_index', value='0')
+                    .input-group-btn
+                      a.preview.btn.btn-default(href="#", title="Preview", role="button")
+                        span.fa.fa-eye(aria-hidden="true")
+                        span.sr-only Preview
+                    label.sr-only(for="os0") Pack Type
+                    select.form-control(name="os0", role="select")
+                      each variant, i in card.variants
+                        option(value="#{variant.name}") #{variant.name} $#{variant.cost}
+                    .input-group-btn
+                      input.btn.btn-primary(type='submit', name='submit', value='Add', role="button")
+
+            .hidden
+              .carousel-inner(role="listbox")
+                each item, i in card.gallery
+                  .item(class=i == 0 ? 'active' : '')
+                    img(src="img/#{item}", alt="#{item}", class="img-responsive", width="576", height="720")

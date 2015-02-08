@@ -1,0 +1,54 @@
+OG Love:
+  description: For the Clyde to your Bonnie. Printed Cards.
+  url: http://google.com
+  img: pack1.jpg
+  variants:
+  - name: Pack of 8
+    cost: 8.00
+  - name: Pack of 16
+    cost: 14.00
+  - name: Digital Download
+    cost: 4.00
+  gallery:
+  - card1.jpg
+  - card2.jpg
+  - card3.jpg
+  - card4.jpg
+
+Gosling Girl:
+  description: Because Netflix and Nachos. Printed Cards.
+  url: http://instagram.com
+  img: pack2.jpg
+  variants:
+  - name: Pack of 12
+    cost: 10.00
+  - name: Pack of 24
+    cost: 16.00
+  - name: Digital Download
+    cost: 6.00
+  gallery:
+  - pack2-card1.jpg
+  - pack2-card2.jpg
+  - pack2-card3.jpg
+  - pack2-card4.jpg
+  - pack2-card5.jpg
+  - pack2-card6.jpg
+
+Queen Bey:
+  description: For your royal hotness. Printed Cards.
+  url: http://instagram.com
+  img: pack3.jpg
+  variants:
+  - name: Pack of 8
+    cost: 8.00
+  - name: Pack of 16
+    cost: 14.00
+  - name: Digital Download
+    cost: 4.00
+  gallery:
+  - pack3-card1.jpg
+  - pack3-card2.jpg
+  - pack3-card3.jpg
+  - pack3-card4.jpg
+
+#<div class="caption"><h3>Queen Bey</h3><p>For your royal hotness.</p><p><strong>Printed Cards </strong>8 Cards $8. 16 cards $14<br><strong>Digital download</strong> PWYC</p><a href="#" class="btn btn-default">Preview</a></div>
