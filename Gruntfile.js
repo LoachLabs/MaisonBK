@@ -51,7 +51,7 @@ module.exports = function(grunt) {
       github: {
         options: {
           remote: 'git@github.com:LoachLabs/MaisonBK.git',
-          branch: 'deploy'
+          branch: 'live'
         }
       }
     }
